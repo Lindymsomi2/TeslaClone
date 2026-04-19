@@ -12,6 +12,7 @@
       <div class="logo">
         <img src="./assets/logo.svg" alt="Tesla Logo" />
       </div>
+
       <!-- menu items -->
       <div class="menu-items">
         <span><a href="#">Vehicles</a></span>
@@ -45,45 +46,58 @@
         </div>
       </section>
       <!-- slideshow or cards section -->
-      <section id="slideshow">
+      <section class="slideshow">
         <!-- first slide -->
         <div class="slide s1">
           <h5>Sport Sudan</h5>
-          <h3>Model 3</h3>
-          <a href="#">Lease from $299/mo</a>
-          <button>Order Now</button>
-          <button>Learn More</button>
+          <div class="left-corner">
+            <h1>Model 3</h1>
+            <a href="#">Lease from $299/mo</a>
+            <button class="blue-btn">Order Now</button>
+            <button class="transp-btn">Learn More</button>
+          </div>
         </div>
         <!-- second slide -->
         <div class="slide s2">
           <h5>Midsize SUV</h5>
-          <h3>Model Y</h3>
-          <a href="#">Lease from $459/mo</a>
-          <button>Order Now</button>
-          <button>Learn More</button>
+          <div class="left-corner">
+            <h1>Model Y</h1>
+            <a href="#">Lease from $459/mo</a>
+            <button class="blue-btn">Order Now</button>
+            <button class="transp-btn">Learn More</button>
+          </div>
         </div>
         <!-- third slide -->
         <div class="slide s3">
           <h5>Utility Truck</h5>
-          <img src="#" alt="Cyber Truck Logo" />
-          <a href="#">Lease from $849/mo</a>
-          <button>Order Now</button>
-          <button>Learn More</button>
+          <div class="left-corner">
+            <img
+              id="crop"
+              src="assets/cybertruck-logo.svg"
+              alt="Cyber Truck Logo"
+            />
+            <a href="#">Lease from $849/mo</a>
+            <button class="blue-btn">Order Now</button>
+            <button class="transp-btn">Learn More</button>
+          </div>
         </div>
         <!-- fouth slide -->
         <div class="slide s4">
           <h5>Luxury Sedan</h5>
-          <h3>Model S</h3>
-          <button>Order Now</button>
-          <button>Learn More</button>
+          <div class="left-corner">
+            <h1>Model S</h1>
+            <button class="blue-btn">Order Now</button>
+            <button class="transp-btn">Learn More</button>
+          </div>
         </div>
         <!-- fifth slide -->
         <div class="slide s5">
-          <h5>Luxury SUV</h5>
-          <h3>Model X</h3>
-          <a href="#">Lease from $299/mo</a>
-          <button>Order Now</button>
-          <button>Learn More</button>
+          <h1>Luxury SUV</h1>
+          <div class="left-corner">
+            <h1>Model X</h1>
+            <button class="blue-btn">Order Now</button>
+            <button class="transp-btn">Learn More</button>
+          </div>
         </div>
       </section>
       <!-- card advertisements -->
@@ -115,88 +129,116 @@
 
       <!-- images showing benefits -->
       <section id="benefits">
-        <div>
-          <h1>Travel Safer, Arrive Refreshed</h1>
-          <p>Full Self-Driving (Supervised)</p>
-          <button>Demo FSD (Supervised)</button>
-          <button>Learn More</button>
+        <div id="self-driving">
+          <div class="left-corner">
+            <h1>Travel Safer, Arrive Refreshed</h1>
+            <h4>Full Self-Driving (Supervised)</h4>
+            <button class="blue-btn">Demo FSD (Supervised)</button>
+            <button class="transp-btn">Learn More</button>
+          </div>
         </div>
-        <div>
-          <h1>Features That Come Standard</h1>
-          <button>Discover</button>
+        <div id="features">
+          <div class="left-corner">
+            <h1>Features That Come Standard</h1>
+            <button class="transp-btn">Discover</button>
+          </div>
         </div>
       </section>
       <!-- map -->
-      <section>
-        <img src="./assets/Screenshot 2026-04-18 at 20.06.24.png" alt="Map" />
+      <section id="map">
+        <div id="locations">
+          <img src="./assets/Screenshot 2026-04-18 at 20.06.24.png" alt="Map" />
+        </div>
+
+        <section id="details">
+          <!-- about charging section -->
+          <div class="charging1">
+            <p>Find Your Charge</p>
+            <h4>
+              View the network of Tesla Superchargers and Destination Chargers
+              available near you.
+            </h4>
+            <div id="cl-buttons">
+              <button>View Network</button>
+              <button>Learn More</button>
+            </div>
+          </div>
+
+          <div class="charging2">
+            <!-- <div class="power"> -->
+
+            <p>36,730</p>
+            <img src="./assets/lightning.svg" alt="lightning sign" />
+            <h4 class="power">Superchargers</h4>
+
+            <!-- </div> -->
+            <!-- <div class="power"> -->
+
+            <p>6,584</p>
+            <img src="./assets/charging.svg" alt="Charging sign" />
+            <h4 class="power">Destination Chargers</h4>
+
+            <!-- </div> -->
+          </div>
+        </section>
       </section>
-      <section>
-        <!-- about charging section -->
-        <div class="charging">
-          <p>Find Your Charge</p>
-          <h4>
-            View the network of Tesla Superchargers and Destination Chargers
-            available near you.
-          </h4>
-          <button>View Network</button>
-          <button>Learn More</button>
-        </div>
-        <div>
-          <p>36,730</p>
-          <img src="#" alt="lightning sign" />
-          <h4>Superchargers</h4>
-        </div>
-        <div>
-          <p>6,584</p>
-          <img src="#" alt="Charging sign" />
-          <h4>Destination Chargers</h4>
-        </div>
-      </section>
-      <section id="otherthings-slide">
-        <!-- first slide -->
-        <div class="slide">
-          <h1>Solar Panels</h1>
-          <p>Power Your Home and Reduce Your Electricity Bill</p>
-          <button>Order Now</button>
-          <button>Learn More</button>
-        </div>
-        <!-- second slide -->
-        <div class="slide">
-          <h1>Powerwall</h1>
-          <p>Keep Your Lights On During Outages</p>
-          <button>Order Now</button>
-          <button>Learn More</button>
-        </div>
-        <!-- third slide -->
-        <div class="slide">
-          <h1>Megapack</h1>
-          <p>Massive Batteries for Massive Energy Support</p>
-          <button>Learn More</button>
-        </div>
-        <!-- fouth slide -->
-        <div class="slide">
-          <h1>Solar Roof</h1>
-          <p>Generate Clean Energy With Your Roof</p>
-          <button>Order Now</button>
-          <button>Learn More</button>
-        </div>
-      </section>
+      <div id="space">
+        <section class="slideshow">
+          <!-- first slide -->
+          <div class="slide s6">
+            <div class="left-corner">
+              <h1>Solar Panels</h1>
+              <h4>Power Your Home and Reduce Your Electricity Bill</h4>
+              <button class="blue-btn">Order Now</button>
+              <button class="transp-btn">Learn More</button>
+            </div>
+          </div>
+          <!-- second slide -->
+          <div class="slide s7">
+            <div class="left-corner">
+              <h1>Powerwall</h1>
+              <h4>Keep Your Lights On During Outages</h4>
+              <button class="blue-btn">Order Now</button>
+              <button class="transp-btn">Learn More</button>
+            </div>
+          </div>
+          <!-- third slide -->
+          <div class="slide s8">
+            <div class="left-corner">
+              <h1>Megapack</h1>
+              <h4>Massive Batteries for Massive Energy Support</h4>
+              <button class="blue-btn">Learn More</button>
+            </div>
+          </div>
+          <!-- fouth slide -->
+          <div class="slide s9">
+            <div class="left-corner">
+              <h1>Solar Roof</h1>
+              <h4>Generate Clean Energy With Your Roof</h4>
+              <button class="blue-btn">Order Now</button>
+              <button class="transp-btn">Learn More</button>
+            </div>
+          </div>
+        </section>
+      </div>
       <section id="fine-print">
-        <p>
-          1 Price reflects monthly subscription, subject to terms and
+        <h6>
+          <sup>1</sup> Price reflects monthly subscription, subject to terms and
           conditions. Price and feature availability subject to change.
-        </p>
+        </h6>
       </section>
     </main>
     <footer>
-      <a href="#" alt="">Tesla © 2026</a>
-      <a href="#">Privacy & Legal</a>
-      <a href="#">Vehicle Recalls</a>
-      <a href="#">Contact</a>
-      <a href="#">News</a>
-      <a href="#">Get Updates</a>
-      <a href="#">Locations</a>
-      <a href="#">Learn</a>
+      <div id="footer-menu">
+        <a href="#" alt="">Tesla © 2026</a>
+        <a href="#">Privacy & Legal</a>
+        <a href="#">Vehicle Recalls</a>
+        <a href="#">Contact</a>
+        <a href="#">News</a>
+        <a href="#">Get Updates</a>
+        <a href="#">Locations</a>
+        <a href="#">Learn</a>
+      </div>
     </footer>
   </body>
 </html>
