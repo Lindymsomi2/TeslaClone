@@ -1,13 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+/* main {
+  font-family: "Urbanist", sans-serif;
+} */
+h1 {
+  color: white;
+  font-size: 48px;
+  line-height: 56px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+h4 {
+  /* color: white; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 4px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 56px;
+}
+header h4 {
+  color: white;
+}
+span {
+  padding: 4px 16px;
+}
+button {
+  width: 200px;
+  height: 40px;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 24px;
+  cursor: pointer;
+}
+img {
+  width: 220px;
+  height: 220px;
+  background-size: contain;
 }
 .logo {
   width: 152px;
   height: 24px;
+  padding: 0 16px;
+  align-items: start;
 }
-/* .menu-items {
-} */
+.text {
+  text-align: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 48px 32px;
+  position: absolute;
+  top: 70px;
+  height: 100%;
+  width: 100%;
+}
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 14px;
+}
+.menu-items a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
 .icons {
   width: 24px;
   height: 24px;
+}
+.nav-items {
+  padding-right: 32px;
+  align-items: end;
+}
+#hero {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#banner {
+  width: 100%;
+  height: 100%;
+}
+#marketing-cards {
+  padding: 48px 48px 0 48px;
+  display: flex;
+}
+.blue-btn {
+  background-color: #3e6ae1;
+  border: 3px solid #0000;
+  color: white;
+}
+.transp-btn {
+  background-color: #fff;
+  border: 3px solid #0000;
+}
+#slideshow {
+  display: flex;
+  width: 500%;
+  /* padding-top: 48px; */
+  position: relative;
+  margin: auto;
+  padding: 48px 48px 0 48px;
+}
+.slide {
+  padding: 0 48px;
+  width: 1024px;
+  height: 580px;
+  display: block;
+  background-size: cover;
+  border-radius: 8px;
+  margin-left: 24px;
+}
+.s1 {
+  background-image: url(./assets/model3.avif);
+}
+.s2 {
+  background-image: url(./assets/modelY.avif);
+}
+.s3 {
+  background-image: url(./assets/cyber-truck.avif);
+}
+.s4 {
+  background-image: url(./assets/modelS.avif);
+}
+.s5 {
+  background-image: url(./assets/modelX.avif);
+}
+.marketing-card {
+  width: 660px;
+  height: 220px;
+  display: flex;
+  border: 1px solid #0000;
+  margin-left: 24px;
+}
+.right-side {
+  width: 220px;
+  height: 220px;
+}
+.left-side {
+  padding: 32px 24px 32px 48px;
+  flex-direction: column;
+  text-align: left;
+  background-color: #f4f4f4;
+}
+.left-side h4 {
+  color: #5c5e62;
+  font-size: bold;
+  /* width: 440px;
+  height: 220px; */
+  margin-left: 0;
+}
+.left-side h1 {
+  font-size: 34px;
+  color: black;
+  /* line-height: px; */
+}
+.left-side button {
+  width: 252px;
+  height: 40px;
+  padding: 4px;
+  border: 3px solid #0000;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 14px;
+  background-color: #fff;
 }

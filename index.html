@@ -14,70 +14,72 @@
       </div>
       <!-- menu items -->
       <div class="menu-items">
-        <a href="#">Vehicles</a>
-        <a href="#">Energy</a>
-        <a href="#">Charging</a>
-        <a href="#">Discover</a>
-        <a href="#">Shop</a>
+        <span><a href="#">Vehicles</a></span>
+        <span><a href="#">Energy</a></span>
+        <span><a href="#">Charging</a></span>
+        <span><a href="#">Discover</a></span>
+        <span><a href="#">Shop</a></span>
       </div>
       <!-- icons on header -->
-      <div class="icons">
-        <img src="./assets/support.svg" alt="Support icon" />
-        <img src="./assets/language.svg" alt="Language icon" />
-        <img src="./assets/account.svg" alt="Account icon" />
+      <div class="nav-items">
+        <img class="icons" src="./assets/support.svg" alt="Support icon" />
+        <img class="icons" src="./assets/language.svg" alt="Language icon" />
+        <img class="icons" src="./assets/account.svg" alt="Account icon" />
       </div>
     </header>
     <!-- start of the main section -->
     <main>
       <!-- video background -->
       <section id="hero">
-        <video autoplay playsinline muted loop>
+        <video id="banner" autoplay playsinline muted loop>
           <source
             src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto:best/Homepage-Promo-Carousel-FSD-Supervised-Tablet.mp4"
             type="video/mp4"
           />
         </video>
-        <h1>Model Y</h1>
-        <p></p>
-        <button>Demo FSD (Supervised)</button>
-        <button>Learn More</button>
+        <div class="text">
+          <h1>Full Self-Driving (Supervised)</h1>
+          <h4>Available for $99/mo</h4>
+          <button class="blue-btn">Demo FSD (Supervised)</button>
+          <button class="transp-btn">Learn More</button>
+        </div>
       </section>
       <!-- slideshow or cards section -->
       <section id="slideshow">
         <!-- first slide -->
-        <div class="slide">
-          <h6>Sport Sudan</h6>
+        <div class="slide s1">
+          <h5>Sport Sudan</h5>
           <h3>Model 3</h3>
           <a href="#">Lease from $299/mo</a>
           <button>Order Now</button>
           <button>Learn More</button>
         </div>
         <!-- second slide -->
-        <div class="slide">
-          <h6>Midsize SUV</h6>
+        <div class="slide s2">
+          <h5>Midsize SUV</h5>
           <h3>Model Y</h3>
           <a href="#">Lease from $459/mo</a>
           <button>Order Now</button>
           <button>Learn More</button>
         </div>
         <!-- third slide -->
-        <div class="slide">
-          <h6>Utility Truck</h6>
+        <div class="slide s3">
+          <h5>Utility Truck</h5>
           <img src="#" alt="Cyber Truck Logo" />
           <a href="#">Lease from $849/mo</a>
           <button>Order Now</button>
           <button>Learn More</button>
         </div>
         <!-- fouth slide -->
-        <div class="slide">
-          <h6>Luxury Sedan</h6>
+        <div class="slide s4">
+          <h5>Luxury Sedan</h5>
           <h3>Model S</h3>
           <button>Order Now</button>
           <button>Learn More</button>
         </div>
         <!-- fifth slide -->
-        <div class="slide">
-          <h6>Luxury SUV</h6>
+        <div class="slide s5">
+          <h5>Luxury SUV</h5>
           <h3>Model X</h3>
           <a href="#">Lease from $299/mo</a>
           <button>Order Now</button>
@@ -87,17 +89,27 @@
       <!-- card advertisements -->
       <section id="marketing-cards">
         <div class="marketing-card">
-          <h2>Current Offers</h2>
-          <p>Explore limited-time offers on Tesla vehicles.</p>
-          <button>Learn More</button>
+          <div class="left-side">
+            <h1>Current Offers</h1>
+            <h4>Explore limited-time offers on Tesla vehicles.</h4>
+            <button>Learn More</button>
+          </div>
+          <div class="right-side">
+            <img src="assets/Current-Offers.avif" alt="current offers" />
+          </div>
         </div>
         <div class="marketing-card">
-          <h2>American Heroes</h2>
-          <p>
-            $500 off for military, first responders, healthcare, teachers and
-            students.
-          </p>
-          <button>Learn More</button>
+          <div class="left-side">
+            <h1>American Heroes</h1>
+            <h4>
+              $500 off for military, first responders, healthcare, teachers and
+              students.
+            </h4>
+            <button>Learn More</button>
+          </div>
+          <div class="right-side">
+            <img src="assets/American-Heroes-v2.avif" alt="current offers" />
+          </div>
         </div>
       </section>
 
