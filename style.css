@@ -188,12 +188,6 @@ p {
   padding: 40px 48px;
   gap: 130px;
 }
-#availability {
-  /* display: block; */
-}
-/* #cl-buttons {
-  flex-direction: column;
-} */
 
 .blue-btn {
   background-color: #3e6ae1;
