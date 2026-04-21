@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=h1, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tesla Clone</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,11 +15,11 @@
 
       <!-- menu items -->
       <div class="menu-items">
-        <span><a href="#">Vehicles</a></span>
-        <span><a href="#">Energy</a></span>
-        <span><a href="#">Charging</a></span>
-        <span><a href="#">Discover</a></span>
-        <span><a href="#">Shop</a></span>
+        <span><a href="./assets/blank.html">Vehicles</a></span>
+        <span><a href="./assets/blank.html">Energy</a></span>
+        <span><a href="./assets/blank.html">Charging</a></span>
+        <span><a href="./assets/blank.html">Discover</a></span>
+        <span><a href="./assets/blank.html">Shop</a></span>
       </div>
       <!-- icons on header -->
       <div class="nav-items">
@@ -38,6 +38,7 @@
             type="video/mp4"
           />
         </video>
+        <!-- banner info -->
         <div class="text">
           <h1>Full Self-Driving (Supervised)</h1>
           <h4>Available for $99/mo</h4>
@@ -46,59 +47,70 @@
         </div>
       </section>
       <!-- slideshow or cards section -->
-      <section class="slideshow">
-        <!-- first slide -->
-        <div class="slide s1">
-          <h5>Sport Sudan</h5>
-          <div class="left-corner">
-            <h1>Model 3</h1>
-            <a href="#">Lease from $299/mo</a>
-            <button class="blue-btn">Order Now</button>
-            <button class="transp-btn">Learn More</button>
+      <section class="slideshow-container">
+        <section class="slideshow">
+          <!-- first slide -->
+          <div class="slide s1">
+            <h5>Sport Sudan</h5>
+            <div class="left-corner">
+              <h1>Model 3</h1>
+              <a
+                href="https://www.tesla.com/model3/design?cfg=%24MT367&id=finplat.AUTO_LEASE%3AOPERATIONAL_LEASE%3ACT_PRIVATE#overview"
+                >Lease from $299/mo</a
+              >
+              <button class="blue-btn">Order Now</button>
+              <button class="transp-btn">Learn More</button>
+            </div>
           </div>
-        </div>
-        <!-- second slide -->
-        <div class="slide s2">
-          <h5>Midsize SUV</h5>
-          <div class="left-corner">
-            <h1>Model Y</h1>
-            <a href="#">Lease from $459/mo</a>
-            <button class="blue-btn">Order Now</button>
-            <button class="transp-btn">Learn More</button>
+          <!-- second slide -->
+          <div class="slide s2">
+            <h5>Midsize SUV</h5>
+            <div class="left-corner">
+              <h1>Model Y</h1>
+              <a
+                href="https://www.tesla.com/modely/design?id=finplat.AUTO_LEASE%3AOPERATIONAL_LEASE%3ACT_PRIVATE#overview"
+                >Lease from $459/mo</a
+              >
+              <button class="blue-btn">Order Now</button>
+              <button class="transp-btn">Learn More</button>
+            </div>
           </div>
-        </div>
-        <!-- third slide -->
-        <div class="slide s3">
-          <h5>Utility Truck</h5>
-          <div class="left-corner">
-            <img
-              id="crop"
-              src="assets/cybertruck-logo.svg"
-              alt="Cyber Truck Logo"
-            />
-            <a href="#">Lease from $849/mo</a>
-            <button class="blue-btn">Order Now</button>
-            <button class="transp-btn">Learn More</button>
+          <!-- third slide -->
+          <div class="slide s3">
+            <h5>Utility Truck</h5>
+            <div class="left-corner">
+              <img
+                id="crop"
+                src="assets/cybertruck-logo.svg"
+                alt="Cyber Truck Logo"
+              />
+              <a
+                href="https://www.tesla.com/cybertruck/design?id=finplat.AUTO_LEASE%3AOPERATIONAL_LEASE%3ACT_PRIVATE#overview"
+                >Lease from $849/mo</a
+              >
+              <button class="blue-btn">Order Now</button>
+              <button class="transp-btn">Learn More</button>
+            </div>
           </div>
-        </div>
-        <!-- fouth slide -->
-        <div class="slide s4">
-          <h5>Luxury Sedan</h5>
-          <div class="left-corner">
-            <h1>Model S</h1>
-            <button class="blue-btn">Order Now</button>
-            <button class="transp-btn">Learn More</button>
+          <!-- fouth slide -->
+          <div class="slide s4">
+            <h5>Luxury Sedan</h5>
+            <div class="left-corner">
+              <h1>Model S</h1>
+              <button class="blue-btn">Order Now</button>
+              <button class="transp-btn">Learn More</button>
+            </div>
           </div>
-        </div>
-        <!-- fifth slide -->
-        <div class="slide s5">
-          <h1>Luxury SUV</h1>
-          <div class="left-corner">
-            <h1>Model X</h1>
-            <button class="blue-btn">Order Now</button>
-            <button class="transp-btn">Learn More</button>
+          <!-- fifth slide -->
+          <div class="slide s5">
+            <h1>Luxury SUV</h1>
+            <div class="left-corner">
+              <h1>Model X</h1>
+              <button class="blue-btn">Order Now</button>
+              <button class="transp-btn">Learn More</button>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
       <!-- card advertisements -->
       <section id="marketing-cards">
@@ -130,7 +142,7 @@
       <!-- images showing benefits -->
       <section id="benefits">
         <div id="self-driving">
-          <div class="left-corner">
+          <div class="special-left-corner">
             <h1>Travel Safer, Arrive Refreshed</h1>
             <h4>Full Self-Driving (Supervised)</h4>
             <button class="blue-btn">Demo FSD (Supervised)</button>
@@ -138,9 +150,9 @@
           </div>
         </div>
         <div id="features">
-          <div class="left-corner">
+          <div class="special-left-corner">
             <h1>Features That Come Standard</h1>
-            <button class="transp-btn">Discover</button>
+            <button class="blue-btn">Discover</button>
           </div>
         </div>
       </section>
@@ -153,36 +165,38 @@
         <section id="details">
           <!-- about charging section -->
           <div class="charging1">
-            <p>Find Your Charge</p>
-            <h4>
-              View the network of Tesla Superchargers and Destination Chargers
-              available near you.
-            </h4>
-            <div id="cl-buttons">
-              <button>View Network</button>
-              <button>Learn More</button>
+            <div class="stacked">
+              <p>Find Your Charge</p>
+              <h4>
+                View the network of Tesla Superchargers and Destination Chargers
+                available near you.
+              </h4>
+            </div>
+            <div id="group">
+              <div class="stacked">
+                <div class="charging1">
+                  <p>36,730</p>
+                  <img src="./assets/lightning.svg" alt="lightning sign" />
+                </div>
+                <h4 class="power">Superchargers</h4>
+              </div>
+              <div class="stacked">
+                <div class="charging1">
+                  <p>6,584</p>
+                  <img src="./assets/charging.svg" alt="Charging sign" />
+                </div>
+                <h4 class="power">Destination Chargers</h4>
+              </div>
             </div>
           </div>
 
-          <div class="charging2">
-            <!-- <div class="power"> -->
-
-            <p>36,730</p>
-            <img src="./assets/lightning.svg" alt="lightning sign" />
-            <h4 class="power">Superchargers</h4>
-
-            <!-- </div> -->
-            <!-- <div class="power"> -->
-
-            <p>6,584</p>
-            <img src="./assets/charging.svg" alt="Charging sign" />
-            <h4 class="power">Destination Chargers</h4>
-
-            <!-- </div> -->
+          <div id="cl-buttons">
+            <button id="dark">View Network</button>
+            <button id="light">Learn More</button>
           </div>
         </section>
       </section>
-      <div id="space">
+      <section class="slideshow-container">
         <section class="slideshow">
           <!-- first slide -->
           <div class="slide s6">
@@ -220,24 +234,53 @@
             </div>
           </div>
         </section>
-      </div>
-      <section id="fine-print">
+      </section>
+      <div id="fine-print">
         <h6>
           <sup>1</sup> Price reflects monthly subscription, subject to terms and
           conditions. Price and feature availability subject to change.
         </h6>
-      </section>
+      </div>
     </main>
     <footer>
       <div id="footer-menu">
-        <a href="#" alt="">Tesla © 2026</a>
-        <a href="#">Privacy & Legal</a>
-        <a href="#">Vehicle Recalls</a>
-        <a href="#">Contact</a>
-        <a href="#">News</a>
-        <a href="#">Get Updates</a>
-        <a href="#">Locations</a>
-        <a href="#">Learn</a>
+        <a href="./assets/blank.html" alt="">Tesla © 2026</a>
+        <a href="./assets/blank.html">Privacy & Legal</a>
+        <a href="./assets/blank.html">Vehicle Recalls</a>
+        <a href="./assets/blank.html">Contact</a>
+        <a href="./assets/blank.html">News</a>
+        <a href="./assets/blank.html">Get Updates</a>
+        <a href="./assets/blank.html">Locations</a>
+        <a href="./assets/blank.html">Learn</a>
+      </div>
+      <div id="sticky-position">
+        <div id="button-container">
+          <button id="question-button">
+            <!-- <div> -->
+            <img
+              class="footer-icons"
+              src="./assets/askquestion.svg"
+              alt="chat icon"
+            />
+
+            <span>Ask a question</span>
+            <input id="input-size" type="text" />
+            <img
+              class="footer-icons"
+              src="./assets/arrow-icon.svg"
+              alt="arrow icon"
+            />
+            <!-- </div> -->
+          </button>
+          <button id="wheel-button">
+            <img
+              class="footer-icons"
+              src="./assets/wheel.svg"
+              alt="steering wheel icon"
+            />
+            <span>Schedule a Drive Today</span>
+          </button>
+        </div>
       </div>
     </footer>
   </body>
